@@ -12,5 +12,6 @@ export class JwtVerifyGuard extends AuthGuard('jwt-verify') {
     }
 
     return context.switchToHttp().getRequest<Request>();
+
   }
 }
